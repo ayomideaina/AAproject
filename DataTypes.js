@@ -47,7 +47,6 @@ console.log(!(4 === '4')); // true
 // console.log(`The area of the triangle is ${area}`);
 
 // 7
-/*
 let birthYear = prompt("Enter birth year:");
 let currentYear = new Date().getFullYear();
 let userAge = currentYear - birthYear;
@@ -56,7 +55,7 @@ if (userAge >= 18) {
 } else {
     console.log(`You are ${userAge}. You will be allowed to drive after ${18 - userAge} years.`);
 }
-*/
+
 
 // 8
 let challenge = "30 Days Of JavaScript";
@@ -73,7 +72,7 @@ console.log(sentence.indexOf("because"));
 console.log(challenge.startsWith("30 Days"));
 console.log(challenge.endsWith("JavaScript"));
 
-//19 Random number between 0 and 100
+//19
 console.log(Math.floor(Math.random() * 101));
 
 // 20
@@ -88,7 +87,7 @@ if (a > b) {
 // Using ternary operator
 console.log(a > b ? "a is greater than b" : "a is less than b");
 
-// Grading system
+// 21
 let score = 65;
 if (score >= 80 && score <= 100) {
     console.log("A");
