@@ -2,21 +2,24 @@ let firstName = "Aina";
 let lastName = "Ayomide";
 let country = "Nigeria";
 let city = "Lagos";
-let age = 25;
+let age = 19;
 let isMarried = false;
 let year = 2025;
 
-console.log(typeof firstName);  //string
-console.log(typeof lastName);   //string
-console.log(typeof country);    //string
-console.log(typeof city);       // string
-console.log(typeof age);        // number
-console.log(typeof isMarried);  // boolean
-console.log(typeof year);       // number
+console.log(typeof firstName);  
+console.log(typeof lastName);   
+console.log(typeof country);    
+console.log(typeof city);       
+console.log(typeof age);        
+console.log(typeof isMarried);  
+console.log(typeof year);       
 
 //2. 
-console.log(typeof '10' === typeof 10); // false
-console.log(parseInt('9.8') === 10); // false
+let typeOfString = typeof '10';
+let number = 10;
+
+console.log(typeOfString === number);
+console.log(parseInt('9.8') === 10); 
 
 //3.  Truthy values
 console.log(Boolean(1));
@@ -29,16 +32,20 @@ console.log(Boolean(""));
 console.log(Boolean(null));
 
 //5.  Logical expressions
-console.log(4 > 3 && 10 < 12); // true
-console.log(4 > 3 && 10 > 12); // false
-console.log(4 > 3 || 10 < 12); // true
-console.log(4 > 3 || 10 > 12); // true
-console.log(!(4 > 3)); // false
-console.log(!(4 < 3)); // true
-console.log(!false); // true
-console.log(!(4 > 3 && 10 < 12)); // false
-console.log(!(4 > 3 && 10 > 12)); // true
-console.log(!(4 === '4')); // true
+const k= 4 > 3 && 10 < 12;
+const n= 4 < 3 && 10 > 12;
+
+const v= 4 > 3 || 10 > 12;
+console.log(k);
+console.log(n);
+console.log(v);
+
+console.log(!(4 > 3));
+console.log(!(4 < 3)); 
+console.log(!false);
+console.log(!(k));
+console.log(!(v));
+console.log(!(4 === '4')); 
 
 //6. Calculate triangle area
 // let base = prompt("Enter base of the triangle:");
@@ -47,7 +54,7 @@ console.log(!(4 === '4')); // true
 // console.log(`The area of the triangle is ${area}`);
 
 // 7
-let birthYear = prompt("Enter birth year:");
+let birthYear = prompt("Please enter your birth year:");
 let currentYear = new Date().getFullYear();
 let userAge = currentYear - birthYear;
 if (userAge >= 18) {
@@ -84,20 +91,20 @@ if (a > b) {
     console.log("a is less than b");
 }
 
-// Using ternary operator
+// ternary operator
 console.log(a > b ? "a is greater than b" : "a is less than b");
 
 // 21
 let score = 65;
 if (score >= 80 && score <= 100) {
-    console.log("A");
+    console.log("grade A");
 } else if (score >= 70 && score < 80) {
-    console.log("B");
+    console.log("grade B");
 } else if (score >= 60 && score < 70) {
-    console.log("C");
+    console.log("grade C");
 } else if (score >= 50 && score < 60) {
-    console.log("D");
+    console.log("grade D");
 } else {
-    console.log("F");
+    console.log("grade F");
 }
 

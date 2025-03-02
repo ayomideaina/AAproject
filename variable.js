@@ -1,5 +1,5 @@
 //Single line comments
-//coments can make code readable
+//comments can make code readable
 // Welcome to 30DaysofJavascript
 
 /*Multiline comments*/
