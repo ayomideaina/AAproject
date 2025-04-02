@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+   <div id="main-container">
+    <p class="text-item">Paragraph 1</p>
+    <p class="text-item">Paragraph 2</p>
+    <p class="text-item">Paragraph 3</p>
+   </div>
+   <script>
+        const container= document.getElementById("main-container");
+
+        const paragraph= document.querySelectorAll(".text-item");
+
+        console.log(container);
+        console.log(paragraph); 
+   </script> 
+</body>
+</html>
